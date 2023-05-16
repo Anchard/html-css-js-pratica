@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registo e visualizaçao de funcionários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><center>Registro e visualização de funcionários</center></h1>
+    <div>
+        <form onsubmit="event.preventDefault();funcFormSubmit();" autocomplete="off" id="funcForm">
+            <div>
+                <label for="funcNome">Nome Completo</label>
+                <input type="text" id="funcNome" name="funcNome">
+            </div>
+            <div>
+                <label for="funcSalario">Salário</label>
+                <input type="text" id="funcSalario" name="funcSalário">
+            </div>
+            <div>
+                <label for="funcLotacao">Lotação</label>
+                <input type="text" id="funcLotacao" name="funcLotacao">
+            </div>
+            <div>
+                <button type="submit">></button>
+            </div>
+        </form>
+    </div>
+    <hr><br>
+    <div>
+        <table id="funcTable">
+            <thead>
+                <th>Nome</th>
+                <th>Salário</th>
+                <th>Lotação</th>
+                <th>Opções</th>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
